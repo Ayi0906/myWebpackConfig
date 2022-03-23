@@ -1,0 +1,13 @@
+#d6 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#d6 > div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
