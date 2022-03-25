@@ -14,10 +14,6 @@ const { VueLoaderPlugin } = require('vue-loader')
 
 /* 将css的编译配置提取出来 */
 const commonCssCompilerLoader = [
-    // css文件进行兼容性处理, 将所有css文件打包为一个文件
-    // {
-    //     loader: MiniCssExtractPlugin.loader,
-    // },
     process.env.NODE_ENV !== 'production'
         ? 'vue-style-loader'
         : MiniCssExtractPlugin.loader,
